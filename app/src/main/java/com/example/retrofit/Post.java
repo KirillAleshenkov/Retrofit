@@ -3,25 +3,31 @@ package com.example.retrofit;
 import com.google.gson.annotations.SerializedName;
 
 public class Post {
-    private int userId;
-    private int id;
-    private String title;
-    @SerializedName("body")
-    private String text;
+    private String name;
+    private double latitude;
+    private double longitude;
 
-    public int getUserId() {
-        return userId;
+    public String getName() {
+        return name;
     }
 
-    public int getId() {
-        return id;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getTitle() {
-        return title;
+    public double getLatitude() {
+        return latitude;
     }
 
-    public String getText() {
-        return text;
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 }
